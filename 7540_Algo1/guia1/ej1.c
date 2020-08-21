@@ -10,4 +10,3 @@ int main(int argc, char* argv[]){
     printf("The price whith discount of 25%% is: %.3f \n", (price/100)*75);
     return 0;
 }
-

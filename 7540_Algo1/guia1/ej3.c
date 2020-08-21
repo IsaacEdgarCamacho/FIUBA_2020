@@ -8,3 +8,4 @@ void main(void){
     printf("la desviacion estandar es = %f \n", result);
 
 }
+

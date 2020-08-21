@@ -12,3 +12,4 @@ void main(void){
     }
     printf("la suma del circuito de resistencias es : %d\n",result);
 }
+
