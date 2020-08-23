@@ -3,7 +3,7 @@
 
 # Compiled Object files
 *.slo
-*.lo
+.lo
 *.o
 *.obj
 
@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# compressed
+*.zip
+*.rar

@@ -53,5 +53,14 @@ int comparar(int vector1[], int n1, int vector2[], int n2) {
 
 void seleccion(int vector[], int n) {
 
-    
+    int posMax = 0;
+    for (int i = 0; i < n; i++){
+        posMax =  maximo(vector, n-i);
+        swap(vector+n-1-i, vector+posMax);
+    }
+            for(int j= 0 ;j<n;j++)
+            printf("%d ", vector[j]);
+
+        printf("\n");
+
 }
