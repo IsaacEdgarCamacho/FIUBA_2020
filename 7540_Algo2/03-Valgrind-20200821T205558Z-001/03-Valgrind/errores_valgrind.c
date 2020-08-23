@@ -51,7 +51,7 @@ void no_inicializar_estatico() {
     int x; 
     
     // Solución: Que la variable tenga valor determinado
-     x = 1;
+    x = 1;
 
     if(x) printf(".");
 }
@@ -76,7 +76,7 @@ void escritura_error(){
     cadena_dinamica[1] = 'B';
     
     // Solución: Borrar la siguiente linea!
-    //cadena_dinamica[2] = 'C';
+    cadena_dinamica[1] = 'C';
 
     free(cadena_dinamica);
 }
@@ -88,7 +88,7 @@ void lectura_error(){
     char* cadena_dinamica = malloc(2 * sizeof(char));
     
     // Solución: Borrar la siguiente linea!
-    char x = cadena_dinamica[0];
+    char x = cadena_dinamica[1];
 
     free(cadena_dinamica);
 }

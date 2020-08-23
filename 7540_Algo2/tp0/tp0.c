@@ -29,9 +29,29 @@ int maximo(int vector[], int n) {
 
 
 int comparar(int vector1[], int n1, int vector2[], int n2) {
-    return 0;
+
+    int result = 0;
+    int i = 0;
+
+    while(i < n1 && i < n2 && vector1[i] == vector2[i])
+        i++;
+
+    
+    if(i < n1 && (i == n2 || vector1[i] > vector2[i]))
+        result = 1;
+
+    if(i == n1 && i == n2)
+        result = 0;
+
+
+    if(i < n2 && (i == n1 || vector1[i] < vector2[i]) )
+        result = -1;    
+
+    return result;
 }
 
 
 void seleccion(int vector[], int n) {
+
+    
 }
