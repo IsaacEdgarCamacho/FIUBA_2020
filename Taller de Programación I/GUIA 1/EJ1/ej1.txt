@@ -1,0 +1,37 @@
+Ejercicio 1 - Ahorcado
+El objetivo del ejercicio es implementar un programa de consola para jugar al ahorcado.
+
+Bienvenido al ahorcado de FIUBA!
+
+La palabra hasta el momento es: _ _ _ _ _ _
+Adivinaste las siguientes letras:
+Te quedan 5 intentos.
+Ingresa una letra: r
+
+La palabra hasta el momento es: _ _ _ _ _ r
+Adivinaste las siguientes letras: r
+Te quedan 5 intentos.
+Ingresa una letra: c
+Si se ingresa una letra que no forma parte de la palabra, se pierde un intento.
+
+La lista de palabras se debe leer de un archivo de texto, donde cada línea del archivo contendrá una palabra. De esa lista, se deberá elegir una palabra (puede ser una selección secuencial de palabras).
+
+El programa termina cuando se adivina correctamente la palabra pensada, o cuando se acabaron los intentos.
+
+Tips:
+
+Recuerda que las variables son inmutables por default. Para cambiar el estado de una variable, se la debe declarar como mut.
+Se puede comparar Strings usando: ==
+Usa println!(...) para imprimir elementos en la salida estándar. Para imprimir una variable, puedes escribir algo como esto:
+println!("Contenido: {}", s);
+Para leer de la entrada estándar, se puede usar algo como esto:
+io::stdin()
+    .read_line(&mut v)
+    .expect("Error leyendo la linea.");
+Parte B
+Mostrar las letras que se ingresaron y que no forman parte de la palabra (las que hacen que se pierda un intento).
+
+Verificar si se ingresó nuevamente una letra que ya estaba.
+
+Parte C
+Sobre la implementación de las funciones, modelizar una estructura de datos que represente al tipo de error de retorno. Por ejemplo: se agotaron los intentos. Basarse en el enum Result.
